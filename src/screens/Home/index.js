@@ -6,7 +6,6 @@ import {
   Title,
   Content,
   Button,
-  Icon,
   Left,
   Body,
   Right,
@@ -14,7 +13,7 @@ import {
   ListItem,
   Text,
 } from 'native-base';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 class Home extends React.Component {
   constructor(props) {
@@ -31,7 +30,7 @@ class Home extends React.Component {
         <Header>
           <Left>
             <Button transparent onPress={() => this.props.navigation.openDrawer()}>
-              <Icon active name="menu" />
+              {/* <Icon name='rocket'  /> */}
             </Button>
           </Left>
           <Body>

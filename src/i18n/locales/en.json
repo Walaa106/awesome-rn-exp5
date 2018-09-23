@@ -19,11 +19,11 @@
       "infoText": "<0><0>Zero </O><1>One </1><2>Two </2><3>Three </3><4>Four</4></O>"
   },
   "login": {
-    "forget-password": "Forget password?",
-    "login": "Login",
-    "property-login": "Property Login",
-    "email": "email",
-    "password": "password",
-    "error": "Enter Valid Username & password!"
-  }
+	"forget-password": "Forget password?",
+	"login": "Login",
+	"property-login": "Property Login",
+	"email": "email",
+	"password": "password",
+	"error": "Enter Valid Username & password!"
+    }
 }

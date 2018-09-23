@@ -8,8 +8,8 @@ export default class Login extends Component {
     const { t, navigation } = this.props;
     return (
         <Container>
-          <Header style={{ paddingBottom: 30 }}>
-            <Left><H3> {t('login:property-login')} </H3></Left>
+          <Header style={{marginTop: 120}}>
+            <Left><H3> {t('property-login')} </H3></Left>
           </Header>
           <Content>
             {this.props.loginForm}

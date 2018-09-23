@@ -26,13 +26,15 @@ i18n
   .use(reactI18nextModule)
   .init({
     fallbackLng: 'en',
+    appendNamespaceToCIMode: true,
+    saveMissing: true,
     resources: { en, ar},
     // have a common namespace used around the full app
-    ns: ['common'],
+    ns: ['common', 'login', 'page2', 'home'],
     defaultNS: 'common',
     debug: false,
     cache: {
-      enabled: true
+      enabled: false
     },
     interpolation: {
       escapeValue: false, // not needed for react as it does escape per default to prevent xss!

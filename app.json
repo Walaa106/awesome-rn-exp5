@@ -1,4 +1,7 @@
 {
   "name": "AwesomeProjectRNExp5",
-  "displayName": "AwesomeProjectRNExp5"
+  "displayName": "AwesomeProjectRNExp5",
+  "expo": {
+    "sdkVersion": "30.0.1"
+  }
 }

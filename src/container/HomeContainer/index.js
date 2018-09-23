@@ -7,7 +7,7 @@ import { fetchList } from './actions';
 
 const propTypes = {
   navigation: PropTypes.object,
-  data: PropTypes.object,
+  data: PropTypes.array,
 };
 
 class HomeContainer extends React.Component {

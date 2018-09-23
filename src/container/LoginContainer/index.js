@@ -72,7 +72,7 @@ class LoginForm extends React.Component {
         .catch(error => alert('Error', error));
     } else {
       Toast.show({
-        text: t('login:error'),
+        text: t('error'),
         duration: 2000,
         type: 'danger',
         position: 'top',
@@ -82,19 +82,20 @@ class LoginForm extends React.Component {
   }
 
   render() {
+    this.props.navigation.navigate('Home');
     const { t, navigation } = this.props;
     const form = (
       <Form>
         <Field
           name='email'
-          label={t('login:email')}
+          label={t('email')}
           component={this.renderInput}
           onChange={this.handleChange('email')}
           validate={[email, required]}
           />
         <Field
           name='password'
-          label={t('login:password')}
+          label={t('password')}
           component={this.renderInput}
           onChange={this.handleChange('password')}
           validate={[alphaNumeric, minLength8, maxLength15, required]}
@@ -116,4 +117,4 @@ const LoginContainer = reduxForm({
   form: 'login',
 })(LoginForm);
 
-export default translate(['common'], { wait: true })(LoginContainer);
+export default translate(['login'], { wait: true })(LoginContainer);

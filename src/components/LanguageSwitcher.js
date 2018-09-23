@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Text } from 'native-base';
 import { translate} from 'react-i18next';
+import i18next from 'i18next';
 import { I18nManager } from 'react-native';
 import RNRestart from 'react-native-restart';
 
@@ -14,9 +15,11 @@ class LanguageSwitcher extends React.Component {
 
 	onChangeLang() {
 		const lang = I18nManager.isRTL ? 'en' : 'ar';
-		I18nManager.allowRTL(!I18nManager.isRTL);
-		I18nManager.forceRTL(!I18nManager.isRTL);
-		RNRestart.Restart();
+		const isRTL = I18nManager.isRTL;
+		I18nManager.allowRTL(!isRTL);
+		I18nManager.forceRTL(!isRTL);
+		I18nManager.isRTL = !isRTL;
+		i18next.changeLanguage(lang);
 	}
 
   render() {

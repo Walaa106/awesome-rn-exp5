@@ -3,6 +3,8 @@ package com.awesomeprojectrnexp5;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.avishayil.rnrestart.ReactNativeRestartPackage;
 import com.i18n.reactnativei18n.ReactNativeI18n;
 import com.auth0.react.A0Auth0Package;
@@ -26,6 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNI18nPackage(),
+            new VectorIconsPackage(),
             new ReactNativeRestartPackage(),
             new ReactNativeI18n(),
             new A0Auth0Package()

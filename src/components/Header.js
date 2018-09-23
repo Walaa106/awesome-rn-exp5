@@ -19,7 +19,7 @@ const index = ({ t, i18n }) => {
 				</Right>
 			</Header>
 			<Header>
-				<Left><YsLogo /></Left>
+				{/* <Left><YsLogo /></Left> */}
 			</Header>
 		</View>
   );
